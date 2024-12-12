@@ -1,4 +1,4 @@
-# Reasoning-Oriented and Analogy-Based Methods for Locating and Editing in Zero-Shot Event-Relational Reasoning
+# Reasoning-Oriented and Analogy-Based Methods for Locating and Editing in Zero-Shot Event-Relational Reasoning (ROLE and ABLE)
 
 This repository contains the implementation for the research work published at COLING 2025 (The 31st International Conference on Computational Linguistics).
 
