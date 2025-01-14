@@ -4,6 +4,8 @@ This repository contains the implementation for the research work published at *
 
 <!-- [![Colab MEMIT Demo](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/kmeng01/memit/blob/main/notebooks/memit.ipynb) -->
 
+![image](logo_cover_photo/ROLE_ABLE_Cover_photo.jpg)
+
 ## Table of Contents
 
 - [ROLE](#ROLE)
