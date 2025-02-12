@@ -1,6 +1,7 @@
 # Reasoning-Oriented and Analogy-Based Methods for Locating and Editing in Zero-Shot Event-Relational Reasoning (ROLE and ABLE)
 
 This repository contains the implementation for the research work published at **COLING 2025** (The 31st International Conference on Computational Linguistics).
+https://aclanthology.org/2025.coling-main.181/
 
 <!-- [![Colab MEMIT Demo](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/kmeng01/memit/blob/main/notebooks/memit.ipynb) -->
 
