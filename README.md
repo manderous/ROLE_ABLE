@@ -43,3 +43,6 @@ Analysis of the analogicality of editing magnitude
 ```
 python ABLE_anal_edit.py
 ```
+
+## 模型保存
+ABLE_para_store中保存的模型：https://drive.google.com/drive/folders/1E2RtfE5l6xGL41rWgY443_j5vsut_uQi?usp=drive_link
