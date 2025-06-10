@@ -16,8 +16,8 @@ https://aclanthology.org/2025.coling-main.181/
 - [ROLE](#ROLE)
 - [ABLE](#ABLE)
 
-## ROLE
-### Reasoning-oriented locating method（推理导向的定位）
+## 推理导向的定位和编辑方法（ROLE）
+### 推理导向的定位（Reasoning-oriented locating method）
 ```
 python ./experiments/ROLE_locating_(...)No_ext.py
 python ./experiments/ROLE_locating_(...)NoW_No_cla.py
@@ -45,7 +45,7 @@ python ./experiments/ROLE_results_analysis_chinese.py
 对于论文中的图3：选择“T5-Encoder画图, 热力图”部分的代码；  
 对于论文中的图4，选择“T5-Decoder画图, 折线图”部分的代码。  
 
-### Reasoning-oriented editing method（推理导向的编辑）
+### 推理导向的编辑（Reasoning-oriented editing method）
 以下代码用于推理导向的编辑，编辑T5的编码器和解码器，来实现对特定任务的优化。
 For encoder's MLP module （编辑编码器的MLP模块）:
 ```
@@ -56,7 +56,7 @@ For decoder's Cross-attention module （编辑解码器的交互注意力模块�
 python ROLE_editing_decoder.py
 ```
 
-## ABLE （基于类比的定位和编辑方法）
+## 基于类比的定位和编辑方法（ABLE）
 ```
 python ABLE_causal_ext.py  # 用于事件因果关系抽取的数据集
 python ABLE_causal_cla.py  # 用于事件因果关系分类的数据集
@@ -71,5 +71,5 @@ Analysis of the analogicality of editing magnitude （分析编辑幅度的可�
 python ABLE_anal_edit.py
 ```
 
-## 模型保存
+## 模型保存（Saved Models）
 ABLE_para_store中保存的模型：https://drive.google.com/drive/folders/1E2RtfE5l6xGL41rWgY443_j5vsut_uQi?usp=drive_link
