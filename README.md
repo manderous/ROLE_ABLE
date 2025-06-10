@@ -1,6 +1,10 @@
 # Reasoning-Oriented and Analogy-Based Methods for Locating and Editing in Zero-Shot Event-Relational Reasoning (ROLE and ABLE)
+# 基于推理编辑和类比编辑的零样本事件关系推理方法
 
 This repository contains the implementation for the research work published at **COLING 2025** (The 31st International Conference on Computational Linguistics).
+
+该工程为论文**基于推理编辑和类比编辑的零样本事件关系推理方法**的代码，该文章发表至COLING 2025会议。
+
 https://aclanthology.org/2025.coling-main.181/
 
 <!-- [![Colab MEMIT Demo](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/kmeng01/memit/blob/main/notebooks/memit.ipynb) -->
