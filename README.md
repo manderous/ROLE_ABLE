@@ -15,6 +15,8 @@ https://aclanthology.org/2025.coling-main.181/
 - [环境配置](#环境配置Enviroment_Setup)
 - [推理导向的定位和编辑方法](#推理导向的定位和编辑方法ROLE)
 - [基于类比的定位和编辑方法](#基于类比的定位和编辑方法ABLE)
+- [保存的模型](#保存的模型Saved_Models)
+- [数据集](#数据集datasets)
 
 ## 环境配置（Enviroment Setup）
 ```
@@ -98,5 +100,9 @@ python ./experiments/ABLE_anal_location.py
 python ABLE_anal_edit.py
 ```
 
-## 模型保存（Saved Models）
+## 保存的模型（Saved Models）
 ABLE_para_store中保存的模型：https://drive.google.com/drive/folders/1E2RtfE5l6xGL41rWgY443_j5vsut_uQi?usp=drive_link
+
+## 数据集（datasets）
+参见：https://drive.google.com/drive/folders/1WxTe3THj503XLNkJTllUNGnl8BL2fcEr?usp=drive_link
+
