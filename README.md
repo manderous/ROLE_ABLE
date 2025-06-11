@@ -79,8 +79,8 @@ python ABLE_causal_ext_to_temporal_enc.py  # 编辑编码器，类比时序任�
 ```
 python ABLE_causal_cla_to_subevent_dec.py  # 编辑解码器，类比子事件任务
 python ABLE_causal_cla_to_subevent_enc.py  # 编辑编码器，类比子事件任务
-python ABLE_causal_cla_to_temporal_dec.py  # 编辑解码器，类比子事件任务
-python ABLE_causal_cla_to_temporal_enc.py  # 编辑编码器，类比子事件任务
+python ABLE_causal_cla_to_temporal_dec.py  # 编辑解码器，类比时序任务
+python ABLE_causal_cla_to_temporal_enc.py  # 编辑编码器，类比时序任务
 ```
 （3）用于子事件关系抽取的数据集：
 ```
