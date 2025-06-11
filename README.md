@@ -13,8 +13,8 @@ https://aclanthology.org/2025.coling-main.181/
 
 ## Table of Contents
 - [环境配置 Enviroment Setup](#环境配置 Enviroment Setup)
-- [ROLE](#ROLE)
-- [ABLE](#ABLE)
+- [ROLE](##ROLE)
+- [ABLE](##ABLE)
 
 ## 环境配置（Enviroment Setup）
 ```
