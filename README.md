@@ -12,9 +12,20 @@ https://aclanthology.org/2025.coling-main.181/
 ![image](logo_cover_photo/ROLE_ABLE_Cover_photo.jpg)
 
 ## Table of Contents
-
+- [环境配置 Enviroment Setup](#环境配置 Enviroment Setup)
 - [ROLE](#ROLE)
 - [ABLE](#ABLE)
+
+## 环境配置（Enviroment Setup）
+```
+CUDA: 11.4
+conda install python=3.8
+conda install pytorch==1.11.0 torchvision==0.12.0 torchaudio==0.11.0 cudatoolkit=11.3 -c pytorch
+conda install transformers==4.41.2
+conda install scikit-learn
+conda install -c conda-forge sentencepiece
+conda install -c conda-forge accelerate
+```
 
 ## 推理导向的定位和编辑方法（ROLE）
 ### 推理导向的定位（Reasoning-oriented locating method）
@@ -57,16 +68,32 @@ python ROLE_editing_decoder.py
 ```
 
 ## 基于类比的定位和编辑方法（ABLE）
+（1）用于事件因果关系抽取的数据集：
 ```
-python ABLE_causal_ext.py  # 用于事件因果关系抽取的数据集
-python ABLE_causal_cla.py  # 用于事件因果关系分类的数据集
-python ABLE_subevent_ext.py  # 用于子事件关系抽取的数据集
+python ABLE_causal_ext_to_subevent_dec.py  # 编辑解码器，类比子事件任务
+python ABLE_causal_ext_to_subevent_enc.py  # 编辑编码器，类比子事件任务
+python ABLE_causal_ext_to_temporal_dec.py  # 编辑解码器，类比时序任务
+python ABLE_causal_ext_to_temporal_enc.py  # 编辑编码器，类比时序任务
 ```
-Analysis of the analogicality of location （分析关键位置的可类比性）
+（2）用于事件因果关系分类的数据集：
+```
+python ABLE_causal_cla_to_subevent_dec.py  # 编辑解码器，类比子事件任务
+python ABLE_causal_cla_to_subevent_enc.py  # 编辑编码器，类比子事件任务
+python ABLE_causal_cla_to_temporal_dec.py  # 编辑解码器，类比子事件任务
+python ABLE_causal_cla_to_temporal_enc.py  # 编辑编码器，类比子事件任务
+```
+（3）用于子事件关系抽取的数据集：
+```
+python ABLE_subevent_ext_to_causal_dec.py  # 编辑解码器，类比因果任务
+python ABLE_subevent_ext_to_causal_enc.py  # 编辑编码器，类比因果任务
+python ABLE_subevent_ext_to_temporal_dec.py  # 编辑解码器，类比子事件任务
+python ABLE_subevent_ext_to_temporal_enc.py  # 编辑编码器，类比子事件任务
+```
+（4）分析关键位置的可类比性（Analysis of the analogicality of location）
 ```
 python ./experiments/ABLE_anal_location.py
 ```
-Analysis of the analogicality of editing magnitude （分析编辑幅度的可类比性）
+（5）分析编辑幅度的可类比性（Analysis of the analogicality of editing magnitude）
 ```
 python ABLE_anal_edit.py
 ```
