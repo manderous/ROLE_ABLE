@@ -12,9 +12,9 @@ https://aclanthology.org/2025.coling-main.181/
 ![image](logo_cover_photo/ROLE_ABLE_Cover_photo.jpg)
 
 ## Table of Contents
-- [环境配置 Enviroment Setup](#环境配置 Enviroment Setup)
-- [ROLE](##ROLE)
-- [ABLE](##ABLE)
+- [Enviroment Setup](#环境配置（Enviroment Setup）)
+- [ROLE](#推理导向的定位和编辑方法（ROLE）)
+- [ABLE](#基于类比的定位和编辑方法（ABLE）)
 
 ## 环境配置（Enviroment Setup）
 ```
