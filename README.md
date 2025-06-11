@@ -28,7 +28,7 @@ conda install -c conda-forge accelerate
 ```
 
 ## 推理导向的定位和编辑方法（ROLE）
-### 推理导向的定位（Reasoning-oriented locating method）
+### （1）推理导向的定位（Reasoning-oriented locating method）
 ```
 python ./experiments/ROLE_locating_(...)No_ext.py
 python ./experiments/ROLE_locating_(...)NoW_No_cla.py
@@ -47,7 +47,7 @@ cla和ext：分别表示分类和抽取任务；
 (...)No：表示True Negative样本中，No的预测概率变化；  
 (...)NoW_No：表示False Negative样本中，No的预测概率变化。  
 
-Analyze locating results:
+#### 分析定位结果（Analyze locating results）:
 ```
 python ./experiments/ROLE_results_analysis.py
 python ./experiments/ROLE_results_analysis_chinese.py
@@ -56,44 +56,44 @@ python ./experiments/ROLE_results_analysis_chinese.py
 对于论文中的图3：选择“T5-Encoder画图, 热力图”部分的代码；  
 对于论文中的图4，选择“T5-Decoder画图, 折线图”部分的代码。  
 
-### 推理导向的编辑（Reasoning-oriented editing method）
+### （2）推理导向的编辑（Reasoning-oriented editing method）
 以下代码用于推理导向的编辑，编辑T5的编码器和解码器，来实现对特定任务的优化。
-For encoder's MLP module （编辑编码器的MLP模块）:
+#### 编辑编码器的MLP模块（For encoder's MLP module ）:
 ```
 python ROLE_editing_encoder.py
 ```
-For decoder's Cross-attention module （编辑解码器的交互注意力模块）:
+#### 编辑解码器的交互注意力模块（For decoder's Cross-attention module）:
 ```
 python ROLE_editing_decoder.py
 ```
 
 ## 基于类比的定位和编辑方法（ABLE）
-（1）用于事件因果关系抽取的数据集：
+### （1）用于事件因果关系抽取的数据集：
 ```
 python ABLE_causal_ext_to_subevent_dec.py  # 编辑解码器，类比子事件任务
 python ABLE_causal_ext_to_subevent_enc.py  # 编辑编码器，类比子事件任务
 python ABLE_causal_ext_to_temporal_dec.py  # 编辑解码器，类比时序任务
 python ABLE_causal_ext_to_temporal_enc.py  # 编辑编码器，类比时序任务
 ```
-（2）用于事件因果关系分类的数据集：
+### （2）用于事件因果关系分类的数据集：
 ```
 python ABLE_causal_cla_to_subevent_dec.py  # 编辑解码器，类比子事件任务
 python ABLE_causal_cla_to_subevent_enc.py  # 编辑编码器，类比子事件任务
 python ABLE_causal_cla_to_temporal_dec.py  # 编辑解码器，类比时序任务
 python ABLE_causal_cla_to_temporal_enc.py  # 编辑编码器，类比时序任务
 ```
-（3）用于子事件关系抽取的数据集：
+### （3）用于子事件关系抽取的数据集：
 ```
 python ABLE_subevent_ext_to_causal_dec.py  # 编辑解码器，类比因果任务
 python ABLE_subevent_ext_to_causal_enc.py  # 编辑编码器，类比因果任务
 python ABLE_subevent_ext_to_temporal_dec.py  # 编辑解码器，类比子事件任务
 python ABLE_subevent_ext_to_temporal_enc.py  # 编辑编码器，类比子事件任务
 ```
-（4）分析关键位置的可类比性（Analysis of the analogicality of location）
+### （4）分析关键位置的可类比性（Analysis of the analogicality of location）
 ```
 python ./experiments/ABLE_anal_location.py
 ```
-（5）分析编辑幅度的可类比性（Analysis of the analogicality of editing magnitude）
+### （5）分析编辑幅度的可类比性（Analysis of the analogicality of editing magnitude）
 ```
 python ABLE_anal_edit.py
 ```
